@@ -6,7 +6,7 @@ public class Quarterback extends Player{
     private boolean top10Receiver;
     private double avgReceiverRank;
 
-    Quarterback(String n, String t, String c, int d, double[] w, int olr, int opr, boolean t10, double avg) {
+    Quarterback (String n, String t, String c, int d, double[] w, int olr, int opr, boolean t10, double avg) {
         super(n,t,c,d);
         weeklyStats = w;
         offensiveLineRank = olr;
@@ -21,6 +21,6 @@ public class Quarterback extends Player{
             System.out.print(weeklyStats[i] + " ");
         }
         System.out.println();
-        System.out.println(weeklyStats + " " + offensiveLineRank + " " + offensivePassRank + " " + top10Receiver + " " + avgReceiverRank);
+        System.out.println(offensiveLineRank + " " + offensivePassRank + " " + top10Receiver + " " + avgReceiverRank);
     }
 }

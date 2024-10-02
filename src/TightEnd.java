@@ -1,12 +1,12 @@
-public class WideReceiver extends Player{
-    
+public class TightEnd extends Player{
+
     private double[] weeklyStats;
     private int offensivePassRank;
     private double avgTargets;
     private int QBpassRank;
     private int redZoneTargets;
 
-    WideReceiver (String n, String t, String c, int d, double[] w, int o, double a, int q, int r) {
+    TightEnd (String n, String t, String c, int d, double[] w, int o, double a, int q, int r) {
         super(n,t,c,d);
         weeklyStats = w;
         offensivePassRank = o;

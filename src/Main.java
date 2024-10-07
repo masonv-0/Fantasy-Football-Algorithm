@@ -7,6 +7,8 @@ public class Main {
     
     /*
 
+    Offenses/Defenses are ranked by Yards/Game
+
     Resources used:
 
     General:
@@ -23,10 +25,9 @@ public class Main {
     - Snap percentage: https://www.fantasypros.com/nfl/reports/snap-counts/rb.php?show=perc
     - Touches/game: https://www.fantasypoints.com/nfl/stats/touches#/
 
-    WR:
+    WR/TE:
     - QB passing rank: https://www.espn.com/nfl/stats/player
     - Average targets, red zone targets: https://nflsavant.com/targets.php?rz=all&ddlYear=2024&week=&ddlTeam=&ddlPosition=
-    - 
      
     */
 
@@ -75,6 +76,10 @@ public class Main {
             
             JSONArray teamScheduleArray = (JSONArray) teamLevel.get("schedule");
             String currentOpponent = (String) (teamScheduleArray.get(currentWeek-1));
+            if (currentOpponent.equals("BYE")) {
+                System.out.println("That player is on their bye week!");
+                System.exit(0);
+            }
 
             JSONObject opponentLevel = (JSONObject) mainJSONObject.get(currentOpponent);
 
@@ -94,7 +99,6 @@ public class Main {
             if (playerPosition.equals("QB")) {
                 int offensivePassRank = (int) (long) teamLevel.get("OffensivePassRank");
                 boolean top10receiver = (boolean) playerLevel.get("top10Receiver");
-                double avgReceiverRank = (double) playerLevel.get("avgReceiverRank");
                 Quarterback player = new Quarterback(playerName, teamIdentifier, currentWeek, currentOpponent, opposingDefensePassRank, past16FantasyPTs, offensiveLineRank, offensivePassRank, top10receiver);
                 player.calculatePoints();
             }

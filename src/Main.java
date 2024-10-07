@@ -5,6 +5,30 @@ import java.util.Scanner;
 
 public class Main {
     
+    /*
+
+    Resources used:
+
+    General:
+    - Points across the past 16 weeks: https://fantasydata.com
+    - Skill position performances in the past: https://www.thefantasyfootballers.com/2023-fantasy-football-stats
+    - Opposing defense passing/rushing rank: https://www.espn.com/nfl/stats/team/_/view/defense/table/passing/sort/netYardsPerGame/dir/asc
+    - Offensive line rank: https://www.pff.com/news/nfl-2024-offensive-line-rankings-detroit-lions-penei-sewell-frank-ragnow
+    - Passing/rushing offense rank: https://www.espn.com/nfl/stats/team/_/table/passing/sort/netYardsPerGame/dir/desc
+
+    QB:
+    - Top 10 receivers (should look for updated list): https://www.pff.com/news/nfl-pff-wide-receiver-rankings-top-32-ahead-of-the-2024-nfl-season
+
+    RB:
+    - Snap percentage: https://www.fantasypros.com/nfl/reports/snap-counts/rb.php?show=perc
+    - Touches/game: https://www.fantasypoints.com/nfl/stats/touches#/
+
+    WR:
+    - QB passing rank: https://www.espn.com/nfl/stats/player
+    - Average targets, red zone targets: https://nflsavant.com/targets.php?rz=all&ddlYear=2024&week=&ddlTeam=&ddlPosition=
+    - 
+     
+    */
 
     //This code is taken from a YouTube video: https://www.youtube.com/watch?v=yLf2-r8w9lQ&t=443s
     public static String getJSONFromFile(String filename) {
@@ -71,17 +95,17 @@ public class Main {
                 int offensivePassRank = (int) (long) teamLevel.get("OffensivePassRank");
                 boolean top10receiver = (boolean) playerLevel.get("top10Receiver");
                 double avgReceiverRank = (double) playerLevel.get("avgReceiverRank");
-                Player player = new Quarterback(playerName, teamIdentifier, currentOpponent, opposingDefensePassRank, past16FantasyPTs, offensiveLineRank, offensivePassRank, top10receiver, avgReceiverRank);
-                player.printAll();
+                Quarterback player = new Quarterback(playerName, teamIdentifier, currentWeek, currentOpponent, opposingDefensePassRank, past16FantasyPTs, offensiveLineRank, offensivePassRank, top10receiver);
+                player.calculatePoints();
             }
 
             else if (playerPosition.equals("RB")) {
                 int offensiveRunRank = (int) (long) teamLevel.get("OffensiveRunRank");
                 double avgSnapPercentage = (double) playerLevel.get("avgSnapPercentage");
                 double avgTouches = (double) playerLevel.get("avgTouches");
-                int totalRedZoneTouches = (int) (long) playerLevel.get("totalRedTouches");
-                Player player = new RunningBack(playerName, teamIdentifier, currentOpponent, opposingDefenseRunRank, past16FantasyPTs, offensiveLineRank, offensiveRunRank, avgSnapPercentage, avgTouches, totalRedZoneTouches);
-                player.printAll();
+                int avgRedZoneTouches = (int) (long) playerLevel.get("avgRedTouches");
+                RunningBack player = new RunningBack(playerName, teamIdentifier, currentWeek, currentOpponent, opposingDefenseRunRank, past16FantasyPTs, offensiveLineRank, offensiveRunRank, avgSnapPercentage, avgTouches, avgRedZoneTouches);
+                player.calculatePoints();
             }
 
             else if (playerPosition.equals("WR")) { 
@@ -89,8 +113,8 @@ public class Main {
                 double avgTargets = (double) playerLevel.get("avgTargets");
                 int QBpassRank = (int) (long) playerLevel.get("QBpassRank");
                 int redZoneTargets = (int) (long) playerLevel.get("redZoneTargets");
-                Player player = new WideReceiver(playerName, teamIdentifier, currentOpponent, opposingDefensePassRank, past16FantasyPTs, offensivePassRank, avgTargets, QBpassRank, redZoneTargets);
-                player.printAll();
+                WideReceiver player = new WideReceiver(playerName, teamIdentifier, currentWeek, currentOpponent, opposingDefensePassRank, past16FantasyPTs, offensivePassRank, avgTargets, QBpassRank, redZoneTargets);
+                player.calculatePoints();
             }
 
             else if (playerPosition.equals("TE")) {
@@ -98,14 +122,14 @@ public class Main {
                 double avgTargets = (double) playerLevel.get("avgTargets");
                 int QBpassRank = (int) (long) playerLevel.get("QBpassRank");
                 int redZoneTargets = (int) (long) playerLevel.get("redZoneTargets");
-                Player player = new TightEnd(playerName, teamIdentifier, currentOpponent, opposingDefensePassRank, past16FantasyPTs, offensivePassRank, avgTargets, QBpassRank, redZoneTargets);
-                player.printAll();
+                TightEnd player = new TightEnd(playerName, teamIdentifier, currentWeek, currentOpponent, opposingDefensePassRank, past16FantasyPTs, offensivePassRank, avgTargets, QBpassRank, redZoneTargets);
+                player.calculatePoints();
             }
 
             else { // D/ST
                 int opposingOffenseRank = ((int) (long) opponentLevel.get("OffensivePassRank") + (int) (long) opponentLevel.get("OffensiveRunRank")) / 2;
-                Player player = new D_ST(teamIdentifier, currentOpponent, past16FantasyPTs, opposingOffenseRank);
-                player.printAll();
+                D_ST player = new D_ST(teamIdentifier, currentWeek, currentOpponent, past16FantasyPTs, opposingOffenseRank);
+                player.calculatePoints();
             }
         } catch (Exception ex) {
             ex.printStackTrace();

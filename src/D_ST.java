@@ -26,7 +26,7 @@ public class D_ST{
         expectedPoints-=getRanges(opposingOffenseRank);
 
         System.out.println();
-        System.out.println("The " + teamName + " D/ST is projected " + expectedPoints + " in Week " + currentWeek + " against " + currentOpponent);
+        System.out.println(teamName + " D/ST is projected " + expectedPoints + " in Week " + currentWeek + " against " + currentOpponent);
     }
 
     public double getRanges(int rank) {

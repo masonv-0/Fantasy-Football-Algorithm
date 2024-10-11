@@ -9,7 +9,6 @@ public class Quarterback{
     private int offensiveLineRank;
     private int offensivePassRank;
     private boolean top10Receiver;
-    private double avgReceiverRank;
 
     Quarterback (String n, String t, int cw, String c, int d, double[] w, int olr, int opr, boolean t10) {
         name = n;

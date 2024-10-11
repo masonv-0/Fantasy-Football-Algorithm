@@ -10,10 +10,10 @@ public class RunningBack {
     private int offensiveRunRank;
     private double avgSnapPercentage;
     private double avgTouches;
-    private int avgRedZoneTouches;
+    private double avgRedZoneTouches;
 
 
-    RunningBack(String n, String t, int cw, String c, int d, double[] w, int olr, int orr, double avgSP, double avgT, int aRZT) {
+    RunningBack(String n, String t, int cw, String c, int d, double[] w, int olr, int orr, double avgSP, double avgT, double aRZT) {
         name = n;
         teamName = t;
         currentWeek = cw;
@@ -82,7 +82,7 @@ public class RunningBack {
 
         //Factors in average red zone touches, good RBs get 3 or more
         if (avgRedZoneTouches >= 3.0) {
-            expectedPoints+=1;
+            expectedPoints+=2;
         }
 
         System.out.println();

@@ -7,6 +7,8 @@ public class Main {
     
     /*
 
+    STATS LAST UPDATED: 10/8/24
+
     Offenses/Defenses are ranked by Yards/Game
 
     Resources used:
@@ -107,7 +109,7 @@ public class Main {
                 int offensiveRunRank = (int) (long) teamLevel.get("OffensiveRunRank");
                 double avgSnapPercentage = (double) playerLevel.get("avgSnapPercentage");
                 double avgTouches = (double) playerLevel.get("avgTouches");
-                int avgRedZoneTouches = (int) (long) playerLevel.get("avgRedTouches");
+                double avgRedZoneTouches = (double) playerLevel.get("avgRedTouches");
                 RunningBack player = new RunningBack(playerName, teamIdentifier, currentWeek, currentOpponent, opposingDefenseRunRank, past16FantasyPTs, offensiveLineRank, offensiveRunRank, avgSnapPercentage, avgTouches, avgRedZoneTouches);
                 player.calculatePoints();
             }

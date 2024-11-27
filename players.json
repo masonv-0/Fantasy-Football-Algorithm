@@ -1,0 +1,293 @@
+{
+    "ARI": {
+        "OffensiveLineRank": 26,
+        "OffensivePassRank": 24,
+        "OffensiveRunRank": 8,
+        "DefensivePassRank": 18,
+        "DefensiveRunRank": 24
+    },
+    "ATL": {
+        "OffensiveLineRank": 6,
+        "OffensivePassRank": 5,
+        "OffensiveRunRank": 17,
+        "DefensivePassRank": 9,
+        "DefensiveRunRank": 29
+    },
+    "BAL": {
+        "schedule": ["KC","LV","DAL","BUF","CIN","WSH","TB","CLE","DEN","CIN","PIT","LAC","PHI","BYE","NYG","PIT","HOU"],
+        "OffensiveLineRank": 25,
+        "OffensivePassRank": 6,
+        "OffensiveRunRank": 1,
+        "DefensivePassRank": 32,
+        "DefensiveRunRank": 4,
+        "Mark Andrews": {
+            "position": "TE",
+            "past16FantasyPTs": [14.6,20.1,15.6,9.5,0.0,0.0,9.1,3.4,4.3,6.4,17.0,14.0,22.3,10.9,12.5,25.0,7.5],
+            "avgTargets": 3.1,
+            "QBpassRank": 7,
+            "redZoneTargets": 4
+        }
+    },
+    "BUF": {
+        "OffensiveLineRank": 8,
+        "OffensivePassRank": 19,
+        "OffensiveRunRank": 14,
+        "DefensivePassRank": 14,
+        "DefensiveRunRank": 26,
+        "schedule": ["ARI", "MIA", "JAX", "BAL", "HOU", "NYJ", "TEN", "SEA", "MIA", "IND", "KC", "BYE", "SF", "LAR", "DET", "NE", "NYJ", "NE"],
+        "Amari Cooper": {
+            "position": "WR",
+            "past16FantasyPTs": [1.3,16.6,8.2,10.0,7.5,27.6,4.1,3.6,51.5,20.9,12.7,6.4,3.6,7.4,15.8,24.9,14.9],
+            "avgTargets": 8.3,
+            "QBpassRank": 18,
+            "redZoneTargets": 4
+        }
+    },
+    "CAR": {
+        "schedule": ["NO","LAC","LV","CIN","CHI","ATL","WSH","DEN","NO","NYG","BYE","KC","TB","PHI","DAL","ARI","TB"],
+        "OffensiveLineRank": 20,
+        "OffensivePassRank": 27,
+        "OffensiveRunRank": 19,
+        "DefensivePassRank": 21,
+        "DefensiveRunRank": 27,
+        "Chuba Hubbard": {
+            "position": "RB",
+            "past16FantasyPTs": [9.1,11.2,15.3,17.5,22.1,27.9,11.6,1.4,11.2,11.1,12.1,12.3,11.6,22.4,20.2,8.5],
+            "avgSnapPercentage": 67.5,
+            "avgTouches": 17.8,
+            "avgRedTouches": 2.4
+        }
+    },
+    "CHI": {
+        "OffensiveLineRank": 11,
+        "OffensivePassRank": 22,
+        "OffensiveRunRank": 27,
+        "DefensivePassRank": 19,
+        "DefensiveRunRank": 18
+    },
+    "CIN": {
+        "OffensiveLineRank": 21,
+        "OffensivePassRank": 7,
+        "OffensiveRunRank": 30,
+        "DefensivePassRank": 1,
+        "DefensiveRunRank": 30
+    },
+    "CLE": {
+        "schedule": ["DAL","JAX","NYG","LV","WSH","PHI","CIN","BAL","LAC","BYE","NO","PIT","DEN","PIT","KC","CIN","MIA"],
+        "OffensiveLineRank": 4,
+        "OffensivePassRank": 30,
+        "OffensiveRunRank": 26,
+        "DefensivePassRank": 10,
+        "DefensiveRunRank": 25,
+        "D/ST": {
+            "position": "D/ST",
+            "past16FantasyPTs": [9.0,2.0,4.0,15.0,7.0,13.0,12.0,0.0,2.0,7.0,15.0,23.0,5.0,16.0,6.0,4.0]
+        }
+    },
+    "DAL": {
+        "OffensiveLineRank": 10,
+        "OffensiveRunRank": 32,
+        "OffensivePassRank": 2,
+        "DefensivePassRank": 19,
+        "DefensiveRunRank": 24
+    },
+    "DEN": {
+        "schedule": ["SEA","PIT","TB","NYJ","LV","LAC","NO","CAR","BAL","KC","ATL","LV","CLE","BYE","IND","LAC","CIN"],
+        "OffensiveLineRank": 15,
+        "OffensivePassRank": 29,
+        "OffensiveRunRank": 21,
+        "DefensivePassRank": 5,
+        "DefensiveRunRank": 10,
+        "Javonte Williams": {
+            "position": "RB",
+            "past16FantasyPTs": [9.6,26.1,4.6,16.1,10.0,6.1,11.5,3.3,20.5,8.8,10.9,4.0,18.1,10.0,10.1,7.3],
+            "avgSnapPercentage": 62.4,
+            "avgTouches": 14.6,
+            "avgRedTouches": 1.8
+        }
+    },
+    "DET": {
+        "OffensiveLineRank": 1,
+        "OffensivePassRank": 3,
+        "OffensiveRunRank": 5,
+        "DefensivePassRank": 27,
+        "DefensiveRunRank": 3
+    },
+    "GB": {
+        "OffensiveLineRank": 14,
+        "OffensivePassRank": 10,
+        "OffensiveRunRank": 6,
+        "DefensivePassRank": 23,
+        "DefensiveRunRank": 11
+    },
+    "HOU": {
+        "OffensiveLineRank": 22,
+        "OffensivePassRank": 1,
+        "OffensiveRunRank": 23,
+        "DefensivePassRank": 3,
+        "DefensiveRunRank": 17
+    },
+    "IND": {
+        "OffensiveLineRank": 3,
+        "OffensivePassRank": 11,
+        "OffensiveRunRank": 12,
+        "DefensivePassRank": 29,
+        "DefensiveRunRank": 31
+    },
+    "JAX": {
+        "OffensiveLineRank": 23,
+        "OffensivePassRank": 20,
+        "OffensiveRunRank": 11,
+        "DefensivePassRank": 32,
+        "DefensiveRunRank": 8
+    },
+    "KC": {
+        "OffensiveLineRank": 7,
+        "OffensivePassRank": 13,
+        "OffensiveRunRank": 17,
+        "DefensivePassRank": 22,
+        "DefensiveRunRank": 7
+    },
+    "LV": {
+        "OffensiveLineRank": 19,
+        "OffensivePassRank": 15,
+        "OffensiveRunRank": 30,
+        "DefensivePassRank": 16,
+        "DefensiveRunRank": 23
+    },
+    "LAR": {
+        "schedule": ["DET","ARI","SF","CHI","GB","BYE","LV","MIN","SEA","MIA","NE","PHI","NO","BUF","SF","NYJ","ARI"],
+        "OffensiveLineRank": 16,
+        "OffensivePassRank": 10,
+        "OffensiveRunRank": 25,
+        "DefensivePassRank": 20,
+        "DefensiveRunRank": 32,
+        "Kyren Williams": {
+            "position": "RB",
+            "past16FantasyPTs": [22.6,19.6,15.5,20.4,31.6,15.2,14.4,30.1,16.4,24.5,14.3,20.2,38.4,21.8,7.7,27.7],
+            "avgSnapPercentage": 86.5,
+            "avgTouches": 22.6,
+            "avgRedTouches": 4.5
+        }
+    },
+    "LAC": {
+        "OffensiveLineRank": 12,
+        "OffensivePassRank": 30,
+        "OffensiveRunRank": 10,
+        "DefensivePassRank": 10,
+        "DefensiveRunRank": 5
+    },
+    "MIA": {
+        "OffensiveLineRank": 18,
+        "OffensivePassRank": 23,
+        "OffensiveRunRank": 15,
+        "DefensivePassRank": 4,
+        "DefensiveRunRank": 19,
+        "schedule": ["BUF", "JAX", "SEA", "NYJ", "NE", "DEN", "IND", "ARI", "LAR", "LV", "NE", "KC", "GB", "SF", "CLE", "PHI", "LAC"],
+        "De'Von Achane": {
+            "position": "RB",
+            "past16FantasyPTs": [26.7,10.5,2.7,5.9,8.8,29.5,23.0,13.1,23.7,4.1,9.2,12.1,25.3,1.5,21.5,27.0],
+            "avgSnapPercentage": 56.3,
+            "avgTouches": 15.7,
+            "avgRedTouches": 1.5
+        }
+    },
+    "MIN": {
+        "OffensiveLineRank": 14,
+        "OffensivePassRank": 17,
+        "OffensiveRunRank": 16,
+        "DefensivePassRank": 30,
+        "DefensiveRunRank": 2
+    },
+    "NE": {
+        "OffensiveLineRank": 32,
+        "OffensivePassRank": 32,
+        "OffensiveRunRank": 9,
+        "DefensivePassRank": 26,
+        "DefensiveRunRank": 13
+    },
+    "NO": {
+        "schedule": ["CAR","DAL","PHI","ATL","KC","TB","DEN","LAC","CAR","ATL","CLE","BYE","LAR","NYG","WSH","GB","LV"],
+        "OffensiveLineRank": 29,
+        "OffensivePassRank": 21,
+        "OffensiveRunRank": 7,
+        "DefensivePassRank": 24,
+        "DefensiveRunRank": 6,
+        "Chris Olave": {
+            "position": "WR",
+            "past16FantasyPTs": [18.7,3.0,16.7,20.6,12.8,3.1,14.6,5.6,23.3,12.8,16.9,18.4,21.4,16.6,9.6,12.7],
+            "avgTargets": 4.8,
+            "QBpassRank": 20,
+            "redZoneTargets": 3
+        }
+    },
+    "NYG": {
+        "OffensiveLineRank": 28,
+        "OffensivePassRank": 12,
+        "OffensiveRunRank": 24,
+        "DefensivePassRank": 15,
+        "DefensiveRunRank": 12
+    },
+    "NYJ": {
+        "OffensiveLineRank": 5,
+        "OffensivePassRank": 19,
+        "OffensiveRunRank": 32,
+        "DefensivePassRank": 2,
+        "DefensiveRunRank": 14
+    },
+    "PHI": {
+        "schedule": ["GB","ATL","NO","TB","BYE","CLE","NYG","CIN","JAX","DAL","WSH","LAR","BAL","CAR","PIT","WSH","DAL"],
+        "OffensiveLineRank": 2,
+        "OffensivePassRank": 17,
+        "OffensiveRunRank": 5,
+        "DefensivePassRank": 25,
+        "DefensiveRunRank": 21,
+        "Jalen Hurts": {
+            "position": "QB",
+            "past16FantasyPTs": [35.1,18.8,20.9,16.3,10.9,23.8,16.4,19.2,23.4,21.9,8.9,23.9,34.5,18.9,25.9,27.4],
+            "top10Receiver": true
+        }
+    },
+    "PIT": {
+        "OffensiveLineRank": 9,
+        "OffensivePassRank": 25,
+        "OffensiveRunRank": 13,
+        "DefensivePassRank": 17,
+        "DefensiveRunRank": 4
+    },
+    "SF": {
+        "OffensiveLineRank": 24,
+        "OffensivePassRank": 4,
+        "OffensiveRunRank": 8,
+        "DefensivePassRank": 12,
+        "DefensiveRunRank": 9
+    },
+    "SEA": {
+        "OffensiveLineRank": 29,
+        "OffensivePassRank": 1,
+        "OffensiveRunRank": 22,
+        "DefensivePassRank": 7,
+        "DefensiveRunRank": 20
+    },
+    "TB": {
+        "OffensiveLineRank": 18,
+        "OffensivePassRank": 16,
+        "OffensiveRunRank": 20,
+        "DefensivePassRank": 28,
+        "DefensiveRunRank": 16
+    },
+    "TEN": {
+        "OffensiveLineRank": 30,
+        "OffensivePassRank": 28,
+        "OffensiveRunRank": 18,
+        "DefensivePassRank": 1,
+        "DefensiveRunRank": 15
+    },
+    "WSH": {
+        "OffensiveLineRank": 27,
+        "OffensivePassRank": 13,
+        "OffensiveRunRank": 3,
+        "DefensivePassRank": 13,
+        "DefensiveRunRank": 22
+    }
+}
